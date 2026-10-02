@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maya Santacruz | Brand strategy and websites for beauty professionals</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffffff;--ink:#262a1b;--muted:#656a52;--accent:#5b6236;--on-accent:#fff;--tint:#e8ead8;--gold:#b9a96a;--line:#dcdfc8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171a10;--ink:#eef0e2;--muted:#b2b79c;--accent:#a9b36b;--on-accent:#171a10;--tint:#262b1a;--gold:#c9ba7c;--line:#333923}}
+:root[data-theme="dark"]{--bg:#171a10;--ink:#eef0e2;--muted:#b2b79c;--accent:#a9b36b;--on-accent:#171a10;--tint:#262b1a;--gold:#c9ba7c;--line:#333923}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bodoni Moda",Georgia,serif;font-weight:500;line-height:1.12;margin:0 0 .6em}
+h1{font-size:clamp(2.1rem,6.6vw,3.9rem);letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,4.5vw,2.5rem)}
+h3{font-size:1.35rem}
+p{margin:0 0 1em;max-width:62ch}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+section{padding:4.5rem 0;border-top:1px solid var(--line)}
+header{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;gap:.8rem}
+.nav{display:flex;gap:.6rem;align-items:center}
+.logo{font-family:"Bodoni Moda",Georgia,serif;font-size:1.2rem;text-decoration:none}
+.btn{display:inline-block;background:var(--accent);color:var(--on-accent);padding:.85rem 1.6rem;border-radius:999px;text-decoration:none;font:700 1rem "DM Sans",system-ui,sans-serif;border:0;cursor:pointer}
+.btn.ghost{background:none;border:1.5px solid var(--accent);color:var(--ink);padding:.55rem 1.1rem;font-size:.9rem}
+.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+@media(max-width:600px){.nav .cta{display:none}}
+.hero{display:grid;gap:2.5rem;padding:2.5rem 0 4.5rem;align-items:center}
+.sub{font-size:1.2rem;color:var(--muted)}
+.pill{display:inline-block;background:var(--ink);color:var(--bg);border-radius:999px;padding:.45rem 1.1rem;font-size:.85rem}
+.frame{position:relative;background:var(--tint);overflow:hidden}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.about{display:grid;gap:2rem;align-items:center}
+@media(min-width:800px){.about{grid-template-columns:1fr 1.3fr}}
+.sq{border-radius:16px;aspect-ratio:4/5;border:1px solid var(--line)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin-top:2.5rem}
+.gal{border-radius:12px;aspect-ratio:1;border:1px solid var(--line)}
+@media(min-width:800px){.hero{grid-template-columns:1.3fr 1fr}}
+.arch{background:var(--tint);border-radius:999px 999px 14px 14px;padding:3rem 1.8rem 2rem;text-align:center;max-width:340px;justify-self:center;width:100%;border:1px solid var(--line)}
+.arch .lbl{font-family:"Bodoni Moda",Georgia,serif;font-size:1.7rem;margin:1.2rem 0 .3rem}
+.arch small{color:var(--muted);display:block;margin-bottom:1.2rem}
+.arch .bar{height:8px;border-radius:4px;background:var(--line);margin:.5rem auto;width:70%}
+.arch .bar.s{width:45%}
+.list{list-style:none;padding:0;margin:0}
+.list li{display:grid;gap:.3rem;padding:1.4rem 0;border-bottom:1px solid var(--line)}
+@media(min-width:700px){.list li{grid-template-columns:1fr 2fr;gap:2rem}}
+.list h3{margin:0}
+.list p{margin:0;color:var(--muted)}
+ol.steps{padding-left:1.2rem;max-width:62ch}
+ol.steps li{margin-bottom:1rem;padding-left:.4rem}
+ol.steps li::marker{font-family:"Bodoni Moda",Georgia,serif;color:var(--accent);font-weight:700}
+.case{display:grid;gap:2rem;align-items:center}
+@media(min-width:800px){.case{grid-template-columns:1fr 1fr}}
+.mock{background:var(--tint);border:1px solid var(--line);border-radius:16px;padding:1.4rem;min-height:260px;display:flex;flex-direction:column;justify-content:center;gap:.6rem}
+.mock .dots{display:flex;gap:.5rem;margin-bottom:1rem}
+.mock .dots i{width:9px;height:9px;border-radius:50%;background:var(--gold);display:block}
+.mock .t{font-family:"Bodoni Moda",Georgia,serif;font-size:1.8rem}
+.mock .b{height:8px;border-radius:4px;background:var(--line)}
+details{border-bottom:1px solid var(--line);padding:1rem 0;max-width:68ch}
+summary{cursor:pointer;font-weight:700;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--accent)}
+details[open] summary::after{content:"\2212"}
+details p{margin:.7rem 0 0;color:var(--muted)}
+.note{color:var(--muted);font-size:.95rem}
+footer{padding:2.5rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="logo" href="#top">Maya Santacruz</a><div class="nav"><button class="btn ghost" id="lang" type="button">Español</button><a class="btn ghost cta" href="#contact" data-i="nav">Book a free brand chat</a></div></header>
+
+<main id="top">
+<div class="hero">
+<div>
+<h1 data-i="h1">I help beauty professionals turn their brand story into a website that brings in clients, no tech skills needed.</h1>
+<p class="sub" data-i="sub">You focus on your craft. I'll find the story behind your work and build the website that tells it.</p>
+<a class="btn" href="#contact" data-i="cta">Book a free brand chat</a>
+</div>
+<div class="arch" aria-hidden="true">
+<div class="bar"></div><div class="bar s"></div>
+<div class="lbl" data-i="studio">Your studio</div>
+<small data-i="story">Your story, on your page</small>
+<span class="pill" data-i="booknow">Book now</span>
+</div>
+</div>
+
+<section id="why">
+<h2 data-i="why">Great at your craft. Online, it doesn't show yet.</h2>
+<p data-i="why1">Many beauty freelancers have loyal clients and beautiful work, but a website that feels like an afterthought, or no website at all. Picking templates and writing about yourself is hard when you don't know what makes you different.</p>
+<p data-i="why2">I start with your brand story and strategy, then turn it into a page that looks like you and is easy for clients to book from.</p>
+</section>
+
+<section id="services">
+<h2 data-i="svc">How I can help</h2>
+<ul class="list">
+<li><h3 data-i="s1t">Brand story session</h3><p data-i="s1p">A guided conversation to find what makes you different, who you serve, and how you want clients to feel. You leave with a clear brand direction.</p></li>
+<li><h3 data-i="s2t">Website build</h3><p data-i="s2p">A custom website built around your brand story, with your services, gallery, and booking link, written in plain language.</p></li>
+<li><h3 data-i="s3t">Done-for-you template launch</h3><p data-i="s3p">Start from a ready-made beauty studio template, and I set it up, add your brand, and launch it for you.</p></li>
+</ul>
+</section>
+
+<section id="process">
+<h2 data-i="proc">How it works</h2>
+<ol class="steps">
+<li data-i="st1">We talk about your business, your clients, and your goals.</li>
+<li data-i="st2">I shape your brand story and strategy, and you approve it.</li>
+<li data-i="st3">I design and build your website around that story.</li>
+<li data-i="st4">We launch, and I show you how to keep it updated.</li>
+</ol>
+</section>
+
+<section id="work">
+<h2 data-i="work">Featured work</h2>
+<div class="case">
+<div class="mock" aria-hidden="true">
+<div class="dots"><i></i><i></i><i></i></div>
+<div class="t">Soft Luxe Lash Studio</div>
+<div class="b" style="width:80%"></div><div class="b" style="width:55%"></div>
+<span class="pill" style="width:max-content;margin-top:.6rem" data-i="bookset">Book your set</span>
+</div>
+<div>
+<h3 data-i="wt">Soft Luxe: a website template for lash studios</h3>
+<p><strong data-i="gl">The goal:</strong> <span data-i="gt">help clients feel pampered and confident the moment they land on the page.</span></p>
+<p><strong data-i="al">The approach:</strong> <span data-i="at">a quiet luxury look, a calm layout, and an Instagram feed built into the gallery.</span></p>
+<p class="note" data-i="wn">Concept project. Client case studies will be added here as they launch.</p>
+</div>
+</div>
+<div class="gallery"><div class="frame gal"><img src="images/work1.jpg" alt="" onerror="this.remove()"></div><div class="frame gal"><img src="images/work2.jpg" alt="" onerror="this.remove()"></div><div class="frame gal"><img src="images/work3.jpg" alt="" onerror="this.remove()"></div></div>
+</section>
+
+<section id="about">
+<div class="about">
+<div class="frame sq"><img src="images/maya-about.jpg" alt="Maya at work" onerror="this.remove()"></div>
+<div>
+<h2 data-i="ab">About me</h2>
+<p data-i="ab1">I'm Maya. I've run my own business in the beauty industry, and that's where I fell in love with branding strategy and turning it into web design.</p>
+<p data-i="ab2">I've always wanted to build something from scratch and make my family proud, and I enjoy helping other beauty professionals do the same. I work in English and Spanish.</p>
+<p data-i="ab3">I believe the beauty industry isn't too crowded if you know how to stand out. That's the work I do with you.</p>
+</div>
+</div>
+</section>
+
+<section id="faq">
+<h2 data-i="faq">Common questions</h2>
+<details><summary data-i="q1">Do I need any tech skills?</summary><p data-i="a1">No. I handle the design, writing support, and setup. You tell me about your business.</p></details>
+<details><summary data-i="q2">What if I don't know my brand yet?</summary><p data-i="a2">That's the starting point. The brand story session is built to help you figure it out.</p></details>
+<details><summary data-i="q3">Can we work in Spanish?</summary><p data-i="a3">Yes. Sessions and support are available in English or Spanish.</p></details>
+<details><summary data-i="q4">How much does it cost?</summary><p data-i="a4">Pricing depends on the package. Book a free chat and I'll recommend the right fit.</p></details>
+</section>
+
+<section id="contact">
+<h2 data-i="ct">Let's talk about your brand</h2>
+<p data-i="ctp">Book a free brand chat and tell me about your business. No pressure, no tech talk.</p>
+<a class="btn" href="mailto:hello@yourdomain.com?subject=Brand%20chat" data-i="mail">Email me to book</a>
+<p class="note" style="margin-top:1rem" data-i="rep">Replace this email address and add your Instagram link before sharing.</p>
+</section>
+</main>
+
+<footer data-i="ft">&copy; Maya Santacruz. Brand strategy and websites for beauty professionals.</footer>
+</div>
+
+<script>
+var es={nav:"Reserva una charla gratis",
+h1:"Ayudo a profesionales de la belleza a convertir la historia de su marca en un sitio web que atrae clientes, sin necesidad de saber de tecnología.",
+sub:"Tú te enfocas en tu oficio. Yo encuentro la historia detrás de tu trabajo y construyo el sitio web que la cuenta.",
+cta:"Reserva una charla gratis",studio:"Tu estudio",story:"Tu historia, en tu página",booknow:"Reservar",
+why:"Eres excelente en lo tuyo. En línea, todavía no se nota.",
+why1:"Muchos profesionales independientes de la belleza tienen clientes fieles y un trabajo hermoso, pero un sitio web que parece un pendiente, o ningún sitio. Elegir plantillas y escribir sobre ti es difícil cuando no sabes qué te hace diferente.",
+why2:"Empiezo por la historia y la estrategia de tu marca, y la convierto en una página que se ve como tú y es fácil para reservar.",
+svc:"Cómo puedo ayudarte",
+s1t:"Sesión de historia de marca",s1p:"Una conversación guiada para descubrir qué te hace diferente, a quién sirves y cómo quieres que se sientan tus clientes. Sales con una dirección de marca clara.",
+s2t:"Creación de sitio web",s2p:"Un sitio web a la medida, basado en la historia de tu marca, con tus servicios, galería y enlace de reservas, escrito en lenguaje sencillo.",
+s3t:"Lanzamiento de plantilla lista",s3p:"Empieza con una plantilla lista para estudios de belleza; yo la configuro, agrego tu marca y la lanzo por ti.",
+proc:"Cómo funciona",
+st1:"Hablamos de tu negocio, tus clientes y tus metas.",st2:"Creo la historia y la estrategia de tu marca, y tú las apruebas.",st3:"Diseño y construyo tu sitio web alrededor de esa historia.",st4:"Lanzamos, y te enseño a mantenerlo actualizado.",
+work:"Trabajo destacado",bookset:"Reserva tu set",wt:"Soft Luxe: una plantilla web para estudios de pestañas",
+gl:"El objetivo:",gt:"que tus clientes se sientan consentidos y seguros desde que entran a la página.",
+al:"El enfoque:",at:"un look de lujo discreto, un diseño tranquilo y un feed de Instagram integrado en la galería.",
+wn:"Proyecto conceptual. Aquí agregaré casos de clientes cuando se lancen.",
+ab:"Sobre mí",
+ab1:"Soy Maya. He tenido mi propio negocio en la industria de la belleza, y ahí me enamoré de la estrategia de marca y de convertirla en diseño web.",
+ab2:"Siempre he querido construir algo desde cero y hacer sentir orgullosa a mi familia, y disfruto ayudar a otros profesionales de la belleza a lograrlo. Trabajo en inglés y español.",
+ab3:"Creo que la industria de la belleza no está saturada si sabes cómo destacar. Ese es el trabajo que hago contigo.",
+faq:"Preguntas frecuentes",
+q1:"¿Necesito saber de tecnología?",a1:"No. Yo me encargo del diseño, el apoyo con la redacción y la configuración. Tú me cuentas de tu negocio.",
+q2:"¿Y si todavía no conozco mi marca?",a2:"Ahí es donde empezamos. La sesión de historia de marca te ayuda a descubrirla.",
+q3:"¿Podemos trabajar en español?",a3:"Sí. Las sesiones y el apoyo están disponibles en inglés o en español.",
+q4:"¿Cuánto cuesta?",a4:"Depende del paquete. Reserva una charla gratis y te recomiendo la mejor opción.",
+ct:"Hablemos de tu marca",ctp:"Reserva una charla gratis y cuéntame sobre tu negocio. Sin presión y sin jerga técnica.",
+mail:"Escríbeme para reservar",rep:"Cambia este correo y agrega tu enlace de Instagram antes de compartir.",
+ft:"© Maya Santacruz. Estrategia de marca y sitios web para profesionales de la belleza."};
+var els=[].slice.call(document.querySelectorAll("[data-i]")),btn=document.getElementById("lang"),lang="en";
+els.forEach(function(e){e.setAttribute("data-en",e.textContent)});
+btn.addEventListener("click",function(){
+lang=lang==="en"?"es":"en";
+els.forEach(function(e){e.textContent=lang==="es"?es[e.getAttribute("data-i")]:e.getAttribute("data-en")});
+document.documentElement.lang=lang;
+btn.textContent=lang==="es"?"English":"Español";
+});
+</script>
+</body>
+</html>
